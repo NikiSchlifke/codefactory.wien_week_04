@@ -1,0 +1,76 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+body 
+{
+	font: normal 100%/1.3em sans-serif; 
+	margin: 10px; 
+	color: #333; 
+	background-color: #fff;
+}
+
+header, article, footer, section
+{
+	display: block;
+	margin: 1em;
+}
+
+header
+{
+	font-weight: bold;
+	text-align: center;
+	padding: 6px;
+	color: #fff;
+	background-color: #666;
+	border: 3px double #fff;
+}
+
+footer
+{
+	font-size: 0.9em;
+	text-align: center;
+	padding: 6px;
+	border-top: 1px solid #999;
+}
+
+div#moveme
+{
+	width: 6em;
+	height: 6em;
+	font-weight: bold;
+	line-height: 4em;
+	/*text-align: center;*/
+	margin: 5px;
+	/*color: #fff;*/
+	/*background-color: #00c;*/
+	overflow: visible;
+	/*border-radius: 5px;*/
+	/*cursor: default;*/
+}
+
+h1
+{
+	font-size: 1.6em;
+	margin-bottom: 4px;
+}
+
+ul
+{
+	list-style-type: disc;
+	margin: 1em 3em;
+}
+
+li
+{
+	margin: 0.8em 0;
+}
+
+a
+{
+	text-decoration: none;
+	color: #00c;
+	margin: 0;
+}

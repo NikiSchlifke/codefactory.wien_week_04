@@ -1,0 +1,32 @@
+body {
+	position: relative;
+}
+
+#templates {
+    visibility: hidden;
+    position: absolute;
+}
+
+#topbar {
+	display: flex;
+	justify-content: space-between;
+	background-color: green;
+}
+
+#topbar ul {
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+}
+
+#topbar ul li {
+	padding: 1em;
+	display: inline;
+}
+
+#shoppingcart {
+	visibility: hidden;
+	position: absolute;
+	right: 0;
+	background-color: yellow;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Shopping cart</title>
+    <link rel="stylesheet" type="text/css" href="shoppingcart.css">
+</head>
+
+<body>
+    <div id="templates">
+        <section class="catalogitem" id="template--catalogitem">
+            <a href="product1.html">
+                <img src="producttemplate.jpg" alt="">
+                </a>
+                <h3>PRODUCT NO. 1</h3>
+                <div class="price"></div>
+                <div class="oldprice"></div>
+                <button onclick="">Add to cart</button>
+            
+        </section>
+        <section class="cartitem" id="template--cartitem">
+            <img src="producttemplate.jpg" alt="" class="cartthumb">
+            <div class="cartdescription">
+                <p class="cartname">TEMPLATE ITEM</p>
+                <p class="cartprice">€ 3</p>
+            </div>
+            <p class="cartcount">x2</p>
+            <p class="cartsum">€ 6</p>
+        </section>
+    </div>
+    <header id="topbar">
+        <ul>
+            <li>useful stuff</li>
+            <li>not really useful stuff</li>
+            <li>useless stuff</li>
+        </ul>
+        <div>
+            <button class="menubutton" id="showhide" name="showhide">
+                <span>VIEW CART(</span>
+                <span id="cartcount"></span>
+                <span>) </span>
+                <span style="transform:scale(2,1);">▼</span>
+            </button>
+        </div>
+    </header>
+    <aside id="shoppingcart">
+        <div id="itemcontainer"></div>
+        <div id="cartfooter">
+            <div class="cartinfo"><span>SUBTOTAL: </span><span id="subtotal"></span></div>
+            <div class="cartinfo"><span>SHIPPING: </span><span id="shipping"></span></div>
+            <div class="cartinfo"><span>TAX: </span><span id="tax"></span></div>
+            <div class="cartinfo"><span>DISCOUNT: </span><span id="discount"></span></div>
+        </div>
+        <button class="cartbutton" name="viewcart">VIEW CART</button>
+        <button class="cartbutton" name="checkout">CHECK OUT</button>
+    </aside>
+    <!-- main>(h1{FEATURED PRODUCTS}+(section>(a[href=product$.html]>img[src=product$.html]+p{PRODUCT NO. $}+div.price+div.oldprice+button[onclick=addtoChart($)]{Add to cart}))*9) -->
+    <main>
+        <h1>FEATURED PRODUCTS</h1>
+        <div id="maincatalog"></div>
+    </main>
+    
+    <!-- load local copy of jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="shoppingcart.js"></script>
+</body>
+
+</html>
